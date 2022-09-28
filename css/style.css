@@ -1,0 +1,261 @@
+body {
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.timesnewroman {
+  font-family: "Times New Roman", Times, serif;
+}
+
+section {
+  background-image: url(../img/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
+}
+
+section:last-of-type {
+  background-image: url(../img/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 0;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+
+input {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input:hover + .menu button span:nth-child(2) {
+  left: -5px;
+}
+
+input:checked + .menu button span {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked + .menu button span:nth-child(2) {
+  opacity: 0;
+}
+
+input:checked + .menu button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+input:checked + .menu button span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(187, 174, 81, 0.5);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  visibility: hidden;
+}
+
+input:checked + .menu nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: 1px 3px grey;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.full-page {
+  min-height: 100vh;
+  outline: 3px solid orange;
+  position: relative;
+}
+
+.firsthalf {
+  outline: 3px solid brown;
+}
+
+.secondhalf {
+  outline: 3px solid grey;
+}
+
+.tothemoon {
+  width: 250px;
+  height: 250px;
+  outline: 5px solid black;
+  position: relative;
+  left: 12%;
+  top: 65px;
+}
+.tothemoon h1 {
+  text-align: center;
+  text-transform: uppercase;
+  position: flex;
+  text-align: center;
+  font-size: 3.5rem;
+  color: black;
+}
+.tothemoon a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+}
+
+.space-ventures {
+  padding-top: 0.1px;
+}
+.space-ventures h2 {
+  text-align: center;
+  font-size: 400%;
+}
+.space-ventures h2 span:first-of-type {
+  display: block;
+  position: relative;
+  z-index: 1;
+  top: 20px;
+  left: -70px;
+}
+.space-ventures h2 span:nth-of-type(2) {
+  position: relative;
+  top: -20px;
+  left: 10px;
+  z-index: 0;
+  color: rgba(189, 195, 199, 0.6);
+}
+
+blockquote {
+  padding: 0;
+  margin: 20px;
+  position: relative;
+  font-style: italic;
+  display: inline;
+}
+blockquote::before, blockquote::after {
+  content: '"';
+  display: block;
+  position: absolute;
+  font-size: 3rem;
+}
+blockquote::before {
+  top: -13px;
+  left: -21px;
+}
+blockquote::after {
+  bottom: -40px;
+  right: -9px;
+}
+
+.quotedesktop {
+  display: none;
+}
+
+.groundcontrol {
+  outline: 3px solid purple;
+}
+
+.floating {
+  outline: 3px solid yellow;
+}
+
+.citatdesk {
+  outline: 3px solid red;
+}
+
+.txtbottom {
+  outline: 3px solid blue;
+}
+
+.major-tom {
+  display: none;
+}
+
+p a {
+  color: #D200A2;
+}
+
+@media screen and (min-width: 1024px) {
+  .full-page {
+    display: flex;
+    gap: 100px;
+  }
+  .firsthalf, .secondhalf {
+    width: 50%;
+  }
+  .quotedesktop {
+    display: block;
+    background: #cf57a7;
+    background: radial-gradient(circle farthest-corner at center center, #CF57A7 0%, #c79fcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .major-tom {
+    display: block;
+    width: 100px;
+    height: auto;
+    float: right;
+    transform: rotate(3deg);
+  }
+  .menu a:hover {
+    border-bottom: 5px solid #CF57A7;
+  }
+}/*# sourceMappingURL=style.css.map */
