@@ -188,19 +188,26 @@ blockquote {
     position: relative;
     font-style: italic;
     display: inline;
+        span {
+            position: relative;
+            z-index: 1;
+        }
     &::before, &::after {
         content: '"';
         display: block;
         position: absolute;
         font-size: 3rem;
+        color: rgba(189, 195, 199, 1);
+        z-index: 0;
+        opacity: 0.8;
     }
     &::before {
         top: -13px;
-        left: -21px;
+        left: -13px;
     }
     &::after {
         bottom: -40px;
-        right: -9px;
+        right: 1px;
     }
 }
 

@@ -187,19 +187,26 @@ blockquote {
   font-style: italic;
   display: inline;
 }
+blockquote span {
+  position: relative;
+  z-index: 1;
+}
 blockquote::before, blockquote::after {
   content: '"';
   display: block;
   position: absolute;
   font-size: 3rem;
+  color: rgb(189, 195, 199);
+  z-index: 0;
+  opacity: 0.8;
 }
 blockquote::before {
   top: -13px;
-  left: -21px;
+  left: -13px;
 }
 blockquote::after {
   bottom: -40px;
-  right: -9px;
+  right: 1px;
 }
 
 .quotedesktop {
