@@ -1,6 +1,8 @@
 body {
     font-family: 'Rubik', sans-serif;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .timesnewroman {
@@ -336,9 +338,10 @@ footer {
         font-weight: bold;
         line-height: 2.5;
         text-shadow:1px 1px 10px #D200A2, 1px 1px 10px #8b0000;
+        justify-content: space-between;
 
-        .acceptcookies {
-            margin-left: auto;
+        .acceptcookies button {
+            margin-right: auto;
         }
     }
 
