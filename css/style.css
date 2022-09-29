@@ -322,14 +322,22 @@ footer {
     width: 100%;
     height: 40px;
     background-color: #00008b;
-    color: #D200A2;
+    color: #de3163;
     z-index: 1;
     font-weight: bold;
     line-height: 2.5;
-    text-shadow: 1px 1px 10px #D200A2, 1px 1px 10px #8b0000;
+    text-shadow: 1px 1px 10px #de3163, 1px 1px 10px #8b0000;
     justify-content: space-between;
   }
   footer .acceptcookies button {
-    margin-right: auto;
+    margin-right: 15px;
+    position: static;
+    background-color: #0047AB;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=style.css.map */
