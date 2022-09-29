@@ -134,8 +134,8 @@ input:checked+.menu button span:nth-child(2) {
 }
 
 .tothemoon {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     outline: 5px solid black;
     position: relative;
     left: 12%;
@@ -145,15 +145,15 @@ input:checked+.menu button span:nth-child(2) {
             text-transform: uppercase;
             position:flex;
             text-align: center;
-            font-size: 3.5rem;
+            font-size: 2.3rem;
             color: black;
         }
         a {
             text-decoration: none;
             color: black;
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             position: absolute;
-            bottom: 10%;
+            bottom: 5%;
             left: 7%;
 
         }
@@ -248,7 +248,7 @@ footer {
 .pil {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 49%;
     font-size: 3em;
 }
 
@@ -330,9 +330,7 @@ footer {
         .acceptcookies {
             margin-left: auto;
         }
-        .cookietext {
-    
-        }
     }
+
     
 }
