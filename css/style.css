@@ -133,6 +133,16 @@ ul a {
   outline: 3px solid grey;
 }
 
+.arrow-move span {
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+
+.arrow-move:hover span {
+  left: 15px;
+}
+
 .tothemoon {
   width: 150px;
   height: 150px;
