@@ -122,7 +122,6 @@ input:checked+.menu button span:nth-child(2) {
 
 .full-page {
     min-height: 100vh;
-    outline: 3px solid orange;
     position: relative;
 }
 
@@ -242,6 +241,17 @@ p {
     }
 }
 
+footer {
+    display: none;
+}
+
+.pil {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 3em;
+}
+
 
 
 @media screen and (min-width: 1024px) {
@@ -303,4 +313,26 @@ p {
             }
     
     }
+    footer {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #00008b;
+        color: #D200A2;
+        z-index: 1;
+        font-weight: bold;
+        line-height: 2.5;
+        text-shadow:1px 1px 10px #D200A2, 1px 1px 10px #8b0000;
+
+        .acceptcookies {
+            margin-left: auto;
+        }
+        .cookietext {
+    
+        }
+    }
+    
 }
