@@ -1,0 +1,365 @@
+@import "_normalize";
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.timesnewroman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    background-image: url(../img/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+}
+
+section:last-of-type {
+    background-image: url(../img/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+  }
+
+input {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+input:hover + .menu button span:nth-child(2) {
+    left: -5px;
+  }
+
+input:checked+.menu button span {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+
+input:checked+.menu button span:nth-child(2) {
+    opacity: 0;
+  }
+
+  input:checked+.menu button span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  input:checked+.menu button span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(225, 217, 209, 0.8);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  input:checked+.menu nav {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 3rem;
+            font-weight: bolder;
+            text-shadow: 1px 3px grey;
+        }
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.full-page {
+    min-height: 100vh;
+    position: relative;
+}
+
+.firsthalf {
+    outline: 3px solid brown;
+}
+
+.secondhalf {
+    outline: 3px solid grey;
+}
+
+.arrow-move span {
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+  }
+  
+.arrow-move:hover span {
+    left: 15px;
+  }
+
+.tothemoon {
+    width: 150px;
+    height: 150px;
+    outline: 5px solid black;
+    position: relative;
+    left: 12%;
+    top: 65px;
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            position: static;
+            font-size: 2.3rem;
+            color: black;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 0.8rem;
+            position: absolute;
+            bottom: 5%;
+            left: 7%;
+
+        }
+
+}
+
+.space-ventures {
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 300%;
+        span:first-of-type {
+            display: block;
+            position: relative;
+            z-index: 1;
+            top: 20px;
+            left: -70px;
+        }
+        span:nth-of-type(2) {
+            position: relative;
+            top: -10px;
+            left: 10px;
+            z-index: 0;
+            color: rgba(189, 195, 199, 0.6);
+        }
+    }
+}
+
+#gcheading {
+    font-size: 110%;
+}
+
+.pmaincontent {
+    font-size: x-small;
+    line-height: 1.5;
+}
+
+blockquote {
+    padding: 0;
+    position: relative;
+    font-style: italic;
+    display: inline;
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    &::before, &::after {
+        content: '"';
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        color: rgba(189, 195, 199, 1);
+        z-index: 0;
+        opacity: 0.8;
+    }
+    &::before {
+        top: -13px;
+        left: -13px;
+    }
+    &::after {
+        bottom: -40px;
+        right: 1px;
+    }
+}
+
+.quotedesktop {
+    display: none;
+}
+
+.groundcontrol {
+    outline: 3px solid purple;
+}
+
+.floating {
+    outline: 3px solid yellow;
+}
+
+.citatdesk {
+    outline: 3px solid red;
+}
+
+.txtbottom {
+    outline: 3px solid blue;
+}
+
+.major-tom {
+    display: none;
+}
+
+p {
+    a {
+        color: #D200A2;
+    }
+}
+
+footer {
+    display: none;
+}
+
+.pil {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    font-size: 3em;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .full-page {
+        display: flex;
+        gap: 100px;
+    }
+    .firsthalf, .secondhalf {
+        width: 50%;
+    }
+    .quotedesktop {
+        display: block;
+        background: #cf57a7;
+        background: radial-gradient(circle farthest-corner at center center, #CF57A7 0%, #c79fcf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .major-tom {
+        display: block;
+        width: 100px;
+        height: auto;
+        float: right;
+        transform: rotate(3deg);
+    }
+
+    .menu {
+        a:hover {
+            border-bottom: 5px solid #CF57A7;
+        }
+    }
+    .tothemoon {
+        width: 250px;
+        height: 250px;
+        outline: 5px solid black;
+        position: relative;
+        left: 12%;
+        top: 65px;
+            h1 {
+                text-align: center;
+                text-transform: uppercase;
+                position:absolute;
+                text-align: center;
+                font-size: 3.5rem;
+                color: black;
+                top: 10px;
+                left: 44px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 0.8rem;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+    
+            }
+    
+    }
+    footer {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #00008b;
+        color: #de3163;
+        z-index: 1;
+        font-weight: bold;
+        line-height: 2.5;
+        text-shadow:1px 1px 10px #de3163, 1px 1px 10px #8b0000;
+        justify-content: space-between;
+
+        .acceptcookies button {
+            margin-right: 15px;
+            position: static;
+            background-color: #0047AB;
+            width: fit-content;
+            height: 30px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    
+}
