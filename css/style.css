@@ -473,12 +473,10 @@ ul a {
   left: 7%;
 }
 
-.space-ventures {
-  padding-top: 0.1px;
-}
 .space-ventures h2 {
+  margin: 0;
   text-align: center;
-  font-size: 400%;
+  font-size: 300%;
 }
 .space-ventures h2 span:first-of-type {
   display: block;
@@ -489,15 +487,23 @@ ul a {
 }
 .space-ventures h2 span:nth-of-type(2) {
   position: relative;
-  top: -20px;
+  top: -10px;
   left: 10px;
   z-index: 0;
   color: rgba(189, 195, 199, 0.6);
 }
 
+#gcheading {
+  font-size: 110%;
+}
+
+.pmaincontent {
+  font-size: x-small;
+  line-height: 1.5;
+}
+
 blockquote {
   padding: 0;
-  margin: 20px;
   position: relative;
   font-style: italic;
   display: inline;
