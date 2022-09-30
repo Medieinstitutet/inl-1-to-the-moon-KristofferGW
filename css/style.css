@@ -430,14 +430,6 @@ ul a {
   position: relative;
 }
 
-.firsthalf {
-  outline: 3px solid brown;
-}
-
-.secondhalf {
-  outline: 3px solid grey;
-}
-
 .arrow-move span {
   position: relative;
   left: 0;
@@ -532,22 +524,6 @@ blockquote::after {
 
 .quotedesktop {
   display: none;
-}
-
-.groundcontrol {
-  outline: 3px solid purple;
-}
-
-.floating {
-  outline: 3px solid yellow;
-}
-
-.citatdesk {
-  outline: 3px solid red;
-}
-
-.txtbottom {
-  outline: 3px solid blue;
 }
 
 .major-tom {
