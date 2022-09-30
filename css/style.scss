@@ -277,6 +277,9 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+    .pmaincontent {
+        font-size: small;
+    }
     .full-page {
         display: flex;
         gap: 100px;
