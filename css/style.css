@@ -156,10 +156,10 @@ ul a {
 .tothemoon h1 {
   text-align: center;
   text-transform: uppercase;
-  position: flex;
-  text-align: center;
+  position: static;
   font-size: 2.3rem;
   color: black;
+  margin: 0;
 }
 .tothemoon a {
   text-decoration: none;
@@ -303,7 +303,7 @@ footer {
     text-align: center;
     font-size: 3.5rem;
     color: black;
-    top: -30px;
+    top: 10px;
     left: 44px;
   }
   .tothemoon a {
